@@ -1,0 +1,68 @@
+/* ===========================================
+   CSS Reset & Box Model Configuration
+=========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  /* ===========================================
+     Root Variables for Easy Theme Customization
+  =========================================== */
+:root {
+    --background-color: #d5e1ef;
+    --card-bg: #ffffff;
+    --text-gray: #a1a1a1;
+    --heading-color: #1f3251;
+    --font-size-heading: 1.4rem;
+    --border-radius: 15px;
+    --img-radius: 10px;
+}
+
+
+/* ===========================================
+   Body Styling - Centers Content Vertically
+=========================================== */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+/* ===========================================
+   Card Container - Main Box
+=========================================== */
+.container{
+    width: 100%;
+    max-width: 300px;   
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: var(--border-radius);
+   text-align: center;
+   
+}
+/* ===========================================
+   QR Code Image Styling
+=========================================== */
+.container img{
+    width: 100%;
+    border-radius: var(--img-radius);
+    margin-bottom: 30px;
+}
+/* ===========================================
+   Heading Styling
+=========================================== */
+.container h2{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+/* ===========================================
+   Paragraph Text Styling
+=========================================== */
+.container p{
+    color: #a1a1a1;
+    margin-bottom: 5px;
+}
